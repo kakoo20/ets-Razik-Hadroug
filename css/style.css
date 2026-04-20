@@ -1494,3 +1494,159 @@ button:focus-visible {
         padding: 2rem 0 !important;
     }
 }
+
+/* Center the button under the section */
+.arrow-toggle {
+    display: block;
+    margin: 10px auto;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: var(--accent);
+    transition: transform 0.3s ease;
+}
+
+/* Rotate arrow when active */
+.arrow-toggle.active {
+    transform: rotate(180deg);
+}
+
+/* Hide content by default */
+/* Cache le détail par défaut */
+.hidden-details {
+    display: none;
+    transition: all 0.3s ease;
+}
+
+/* Affiche le détail quand la classe 'show' est ajoutée */
+.hidden-details.show {
+    display: block;
+}
+
+/* Rotation de l'icône */
+.arrow-toggle.active .arrow-icon {
+    display: inline-block;
+    transform: rotate(180deg);
+}
+
+/* ============================================
+   ACCORDION STYLES
+   ============================================ */
+
+/* Button style */
+.arrow-toggle {
+    display: block;
+    margin: 10px auto;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: var(--accent);
+    transition: transform 0.3s ease;
+}
+
+/* Rotate arrow when active */
+.arrow-toggle.active {
+    transform: rotate(180deg);
+}
+
+/* Hide content by default */
+.hidden-details {
+    display: none;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+/* Show content when active */
+.hidden-details.show {
+    display: block;
+    opacity: 1;
+}
+
+/* Container Card */
+.map-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Modern soft shadow */
+    border: 1px solid #f0f0f0;
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.map-title {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: var(--color-gray-900);
+}
+
+/* Map Wrapper */
+.map-wrapper {
+    border-radius: 12px;
+    overflow: hidden; /* Ensures the iframe doesn't poke out of rounded corners */
+}
+
+/* Map Button */
+.btn-map {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 28px;
+    background-color: var(--accent); /* Uses your existing site variable */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-map:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.1); /* Slightly lighter on hover */
+}
+
+/* Container for side-by-side items */
+.location-grid {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 40px auto;
+}
+
+/* Base style for both cards */
+.hours-card, .map-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid #f0f0f0;
+    width: 100%;
+}
+
+/* Table styling */
+.hours-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.hours-table td {
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    color: var(--color-gray-700);
+}
+
+.hours-table td:last-child {
+    text-align: right;
+    font-weight: 600;
+    color: var(--color-black);
+}
+
+/* Mobile: Stack them vertically when screen is small */
+@media (max-width: 768px) {
+    .location-grid {
+        flex-direction: column;
+    }
+}
