@@ -1,331 +1,296 @@
-<!-- infrastructures.html - Pillar 1 -->
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Gestion d'Infrastructures - Ets Hadroug Razik</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body class="theme-infra">
-        <!-- Header -->
-        <header class="main-header">
-            <div class="container">
-                <div class="logo">
-                    <h1>Ets.<span class="highlight">HADROUG RAZIK</span></h1>
-                </div>
-                <nav class="main-nav">
-                    <button class="mobile-menu-toggle" aria-label="Menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                    <ul class="nav-list">
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="infrastructures.html" class="active">Infrastructures</a></li>
-                        <li><a href="magasins.html">Magasins</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="etb-tce.html">ETB TCE</a></li>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion d'Infrastructures - Ets. Hadroug Razik</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header" id="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <div class="logo-mark">HR</div>
+                <div class="logo-text">Ets. <span>Hadroug Razik</span></div>
+            </a>
+            <nav class="main-nav">
+                <button class="mobile-menu-toggle" id="menuToggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-list" id="navList">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="infrastructures.html" class="active">Infrastructures</a></li>
+                    <li><a href="magasins.html">Magasins</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="etb-tce.html">ETB TCE</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="hero-image">
+            <img src="assets/hero-infra.jpg" alt="Gestion d'Infrastructures">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-label">Pole d'activite</div>
+            <h1 class="hero-title">Gestion d'Infrastructures</h1>
+            <p class="hero-subtitle">Gestion moderne des espaces publics et infrastructures essentielles pour le bien-etre de la communaute.</p>
+        </div>
+    </section>
+
+    <!-- Marches Hebdomadaires -->
+    <section id="marches" class="content-section">
+        <div class="container">
+            <div class="section-header-bar reveal">
+                <h2>Marches Hebdomadaires</h2>
+                <span class="section-badge">Tradition & Modernite</span>
+            </div>
+            <div class="content-body reveal reveal-delay-1">
+                <div class="content-text">
+                    <p>Nos marches hebdomadaires constituent des poles dynamiques de commerce local, offrant un espace structure et securise pour les commercants et les consommateurs.</p>
+                    <ul>
+                        <li><strong>Emplacements securises</strong> <span>Emplacements amenages et organises pour les commercants</span></li>
+                        <li><strong>Gestion optimisee</strong> <span>Flux et circulation fluide pour une experience agreable</span></li>
+                        <li><strong>Hygiene renforcee</strong> <span>Services de proprete et gestion des dechets</span></li>
+                        <li><strong>Animation commerciale</strong> <strong>Evenements et initiatives pour dynamiser le marche</strong></li>
                     </ul>
-                </nav>
+                </div>
+                <div class="content-visual">
+                    <img src="assets/hero-infra.jpg" alt="Marche hebdomadaire">
+                </div>
             </div>
-        </header>
-
-     <!-- Page Hero -->
-        <section class="page-hero">
-            <div class="container">
-                <h1>Gestion d'Infrastructures</h1>
-                <p>Gestion moderne des espaces publics et infrastructures essentielles</p>
-                <a href="index.html" class="back-home">← Retour à l'accueil</a>
+            <button class="accordion-toggle" type="button" data-target="marches-details">
+                <span>Horaires & Localisation</span>
+                <svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="hidden-details" id="marches-details">
+                <div class="location-grid">
+                    <div class="location-card">
+                        <h3>Notre Localisation</h3>
+                        <div class="map-wrapper">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1384.655506830871!2d4.853783761780804!3d36.6857830790187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sdz!4v1776672171786!5m2!1sfr!2sdz" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                        <div class="map-actions">
+                            <a href="https://maps.app.goo.gl/2xmho6CCJptQogXo9" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Itineraire</a>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <h3>Horaires d'ouverture</h3>
+                        <table class="hours-table">
+                            <tr><td>Lundi</td><td>06:30 - 14:00</td></tr>
+                            <tr><td>Vendredi</td><td>06:30 - 14:00</td></tr>
+                        </table>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Content Sections -->
-        <main class="content-main">
-            <!-- Marchés Hebdomadaires -->
-            <section id="marches" class="content-section">
-                <div class="container">
-                    <div class="section-header">
-                        <h2>Marchés Hebdomadaires</h2>
-                        <span class="section-badge">Tradition & Modernité</span>
+    <!-- Marches de Vehicules -->
+    <section id="vehicules" class="content-section alt-bg">
+        <div class="container">
+            <div class="section-header-bar reveal">
+                <h2>Marches de Vehicules</h2>
+                <span class="section-badge">Espaces Dedouanes</span>
+            </div>
+            <div class="content-body reveal reveal-delay-1">
+                <div class="content-text">
+                    <p>Plateformes dediees a la commercialisation de vehicules, equipees de toutes les commodites pour acheteurs et vendeurs.</p>
+                    <ul>
+                        <li><strong>Zones d'exposition</strong> <span>Espaces securises et surveilles pour presenter les vehicules</span></li>
+                        <li><strong>Services administratifs</strong> <span>Assistance pour la documentation et les demarches</span></li>
+                        <li><strong>Expertise technique</strong> <span>Controle et verification sur place par des professionnels</span></li>
+                        <li><strong>Assistance documentaire</strong> <span>Accompagnement dans toutes les formalites</span></li>
+                    </ul>
+                </div>
+                <div class="content-visual">
+                    <img src="assets/hero-infra.jpg" alt="Marche de vehicules">
+                </div>
+            </div>
+            <button class="accordion-toggle" type="button" data-target="vehicules-details">
+                <span>Horaires & Localisation</span>
+                <svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="hidden-details" id="vehicules-details">
+                <div class="location-grid">
+                    <div class="location-card">
+                        <h3>Notre Localisation</h3>
+                        <div class="map-wrapper">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1384.655506830871!2d4.853783761780804!3d36.6857830790187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sdz!4v1776672171786!5m2!1sfr!2sdz" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                        <div class="map-actions">
+                            <a href="https://maps.app.goo.gl/2xmho6CCJptQogXo9" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Itineraire</a>
+                        </div>
                     </div>
-                    <div class="section-content">
-                        <div class="text-content">
-                            <p>Nos marchés hebdomadaires constituent des pôles dynamiques de commerce local, offrant:</p>
-                            <ul>
-                                <li>Emplacements sécurisés et aménagés pour les commerçants</li>
-                                <li>Gestion optimisée des flux et de la circulation</li>
-                                <li>Services d'hygiène et de propreté renforcés</li>
-                                <li>Animation commerciale et événementielle</li>
-                            </ul>
-                        </div>
-                        <div class="visual-content">
-                            <div class="placeholder-img" style="background: linear-gradient(135deg, #00336620, #00336640);">
-                                <span>Marché Traditionnel</span>
-                            </div>
-                        </div>
+                    <div class="location-card">
+                        <h3>Horaires d'ouverture</h3>
+                        <table class="hours-table">
+                            <tr><td>Samedi</td><td>06:30 - 14:00</td></tr>
+                        </table>
                     </div>
                 </div>
-                    <button class="arrow-toggle" type="button">
-                        <span class="arrow-icon">▼</span>
-                    </button>
+            </div>
+        </div>
+    </section>
 
-                <div class="hidden-details">
-                    <div class="container">
-                        <div class="map-card" style="flex: 1;"> 
-                            <h3 class="map-title">Notre Localisation</h3>
-                            <div class="map-wrapper">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1384.655506830871!2d4.853783761780804!3d36.6857830790187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sdz!4v1776672171786!5m2!1sfr!2sdz" 
-                                    width="100%" height="300" style="border:0;" 
-                                    allowfullscreen="" loading="lazy">
-                                </iframe>
-                                <div class="map-actions">
-                                    <a href="https://maps.app.goo.gl/2xmho6CCJptQogXo9" target="_blank" rel="noopener noreferrer" class="btn-map">Itinéraire</a>
-                                </div>
-                            </div>
+    <!-- Abattoirs -->
+    <section id="abattoirs" class="content-section">
+        <div class="container">
+            <div class="section-header-bar reveal">
+                <h2>Abattoirs</h2>
+                <span class="section-badge">Normes Sanitaires</span>
+            </div>
+            <div class="content-body reveal reveal-delay-1">
+                <div class="content-text">
+                    <p>Installations conformes aux normes internationales de salubrite, garantissant une chaine de production hygienique et securisee.</p>
+                    <ul>
+                        <li><strong>Equipements modernes</strong> <span>Installations de traitement a la pointe de la technologie</span></li>
+                        <li><strong>Controle veterinaire</strong> <span>Surveillance permanente pour garantir la qualite</span></li>
+                        <li><strong>Chaine du froid</strong> <span>Respect strict des temperatures de conservation</span></li>
+                        <li><strong>Gestion des dechets</strong> <span>Systeme optimise et respectueux de l'environnement</span></li>
+                    </ul>
+                </div>
+                <div class="content-visual">
+                    <img src="assets/hero-infra.jpg" alt="Abattoir moderne">
+                </div>
+            </div>
+            <button class="accordion-toggle" type="button" data-target="abattoirs-details">
+                <span>Horaires & Localisation</span>
+                <svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="hidden-details" id="abattoirs-details">
+                <div class="location-grid">
+                    <div class="location-card">
+                        <h3>Notre Localisation</h3>
+                        <div class="map-wrapper">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3395.857393342101!2d4.8439205!3d36.6739559!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128d2501b5c59017%3A0xf38357349ca1e7!2sAbattoir%20Communal%20d'El-Kseur!5e1!3m2!1sfr!2sdz!4v1776690008130!5m2!1sfr!2sdz" allowfullscreen="" loading="lazy"></iframe>
                         </div>
-                        <div class="hours-card" style="flex: 1;">
-                            <h3 class="map-title">Horaires d'ouverture</h3>
-                            <table class="hours-table">
-                                <tr><td>Lundi</td><td>06:30 - 14:00</td></tr>
-                                <tr><td>Vendredi</td><td>06:30 - 14:00</td></tr>
-                            </table>
-                
+                        <div class="map-actions">
+                            <a href="https://maps.app.goo.gl/GMhoYFZ73YMrJjkd8" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Itineraire</a>
+                            <a href="https://bitly.cx/genC1" target="_blank" class="btn btn-primary">Reserver</a>
                         </div>
+                    </div>
+                    <div class="location-card">
+                        <h3>Horaires d'ouverture</h3>
+                        <table class="hours-table">
+                            <tr><td>Samedi</td><td>06:30 - 14:00</td></tr>
+                        </table>
                     </div>
                 </div>
-            </section>
+            </div>
+        </div>
+    </section>
 
-            <!-- Marchés de Véhicules -->
-            <section id="vehicules" class="content-section alt-bg">
-                <div class="container">
-                    <div class="section-header">
-                        <h2>Marchés de Véhicules</h2>
-                        <span class="section-badge">Espaces Dédouanés</span>
+    <!-- Parkings -->
+    <section id="parkings" class="content-section alt-bg">
+        <div class="container">
+            <div class="section-header-bar reveal">
+                <h2>Parkings 24h/24 7j/7</h2>
+                <span class="section-badge">Securite Maximale</span>
+            </div>
+            <div class="content-body reveal reveal-delay-1">
+                <div class="content-text">
+                    <p>Solutions de stationnement intelligent et securise, disponible en permanence pour votre tranquillite.</p>
+                    <ul>
+                        <li><strong>Surveillance video</strong> <span>Camera de surveillance en continu 24h/24</span></li>
+                        <li><strong>Acces controle</strong> <span>Systeme de badge et controle d'acces securise</span></li>
+                        <li><strong>Tarification flexible</strong> <span>Options adaptees a courte et longue duree</span></li>
+                        <li><strong>Maintenance reguliere</strong> <span>Entretien constant des espaces et equipements</span></li>
+                    </ul>
+                </div>
+                <div class="content-visual">
+                    <img src="assets/hero-infra.jpg" alt="Parking securise">
+                </div>
+            </div>
+            <button class="accordion-toggle" type="button" data-target="parkings-details">
+                <span>Horaires & Localisation</span>
+                <svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="hidden-details" id="parkings-details">
+                <div class="location-grid">
+                    <div class="location-card">
+                        <h3>Notre Localisation</h3>
+                        <div class="map-wrapper">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d673.7811093788429!2d4.855516746648653!3d36.67879454551902!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sfr!2sdz!4v1776692332756!5m2!1sfr!2sdz" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                        <div class="map-actions">
+                            <a href="https://maps.app.goo.gl/KE6nNfSdcnJnxbTq7" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Itineraire</a>
+                        </div>
                     </div>
-                    <div class="section-content">
-                        <div class="text-content">
-                            <p>Plateformes dédiées à la commercialisation de véhicules avec:</p>
-                                <ul>
-                                    <li>Zones d'exposition sécurisées et surveillées</li>
-                                    <li>Services administratifs intégrés</li>
-                                    <li>Expertise technique sur place</li>
-                                    <li>Assistance à la documentation</li>
-                                </ul>
-                        </div>
-                        <div class="visual-content">
-                            <div class="placeholder-img" style="background: linear-gradient(135deg, #00336620, #00336640);">
-                                <span>Parc Automobile</span>
-                            </div>
-                        </div>
-                    </div>
-                        <button class="arrow-toggle" type="button">
-                            <span class="arrow-icon">▼</span>
-                        </button>
-                    
-                    <div class="hidden-details">
-                        <div class="container">
-                            <div class="map-card" style="flex: 1;"> 
-                                <h3 class="map-title">Notre Localisation</h3>
-            
-                                <div class="map-wrapper">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1384.655506830871!2d4.853783761780804!3d36.6857830790187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sdz!4v1776672171786!5m2!1sfr!2sdz" 
-                                     width="100%" height="300" style="border:0;" 
-                                     allowfullscreen="" loading="lazy">
-                                    </iframe>
-                                    <div class="map-actions">
-                                        <a href="https://maps.app.goo.gl/2xmho6CCJptQogXo9" target="_blank" rel="noopener noreferrer" class="btn-map">Itinéraire</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="hours-card" style="flex: 1;">
-                                <h3 class="map-title">Horaires d'ouverture</h3>
-                                <table class="hours-table">
-                                    <tr><td>Samedi</td><td>06:30 - 14:00</td></tr>
-                                </table>
-                
-                            </div>
-                        </div>
+                    <div class="location-card">
+                        <h3>Horaires d'ouverture</h3>
+                        <table class="hours-table">
+                            <tr><td>Dimanche - Samedi</td><td>24h/24</td></tr>
+                        </table>
                     </div>
                 </div>
-            </section>
+            </div>
+        </div>
+    </section>
 
-            <!-- Abattoirs -->
-            <section id="abattoirs" class="content-section">
-                <div class="container">
-                    <div class="section-header">
-                        <h2>Abattoirs</h2>
-                        <span class="section-badge">Normes Sanitaires</span>
-                    </div>
-                    <div class="section-content">
-                        <div class="text-content">
-                            <p>Installations conformes aux normes internationales de salubrité:</p>
-                            <ul>
-                                <li>Équipements modernes de traitement</li>
-                                <li>Contrôle vétérinaire permanent</li>
-                                <li>Chaîne du froid respectée</li>
-                                <li>Gestion des déchets optimisée</li>
-                            </ul>
+    <!-- Parkings Moto -->
+    <section id="parkings-moto" class="content-section">
+        <div class="container">
+            <div class="section-header-bar reveal">
+                <h2>Parkings Moto 24h/24 7j/7</h2>
+                <span class="section-badge">Securite Maximale</span>
+            </div>
+            <div class="content-body reveal reveal-delay-1">
+                <div class="content-text">
+                    <p>Espaces de stationnement dedies aux deux-roues, avec la meme securite et disponibilite que nos parkings automobiles.</p>
+                    <ul>
+                        <li><strong>Surveillance video</strong> <span>Camera de surveillance en continu 24h/24</span></li>
+                        <li><strong>Acces controle</strong> <span>Systeme de badge et controle d'acces securise</span></li>
+                        <li><strong>Tarification flexible</strong> <span>Tarifs adaptes aux deux-roues</span></li>
+                        <li><strong>Maintenance reguliere</strong> <span>Entretien constant des espaces</span></li>
+                    </ul>
+                </div>
+                <div class="content-visual">
+                    <img src="assets/hero-infra.jpg" alt="Parking moto securise">
+                </div>
+            </div>
+            <button class="accordion-toggle" type="button" data-target="parkings-moto-details">
+                <span>Horaires & Localisation</span>
+                <svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="hidden-details" id="parkings-moto-details">
+                <div class="location-grid">
+                    <div class="location-card">
+                        <h3>Notre Localisation</h3>
+                        <div class="map-wrapper">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d336.873800708184!2d4.863054201867585!3d36.682632788736505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128d2532b2a48537%3A0x5f98c88cc0445ada!2sMVM7%2B36X%2C%20El%20Kseur!5e1!3m2!1sfr!2sdz!4v1776804427949!5m2!1sfr!2sdz" allowfullscreen="" loading="lazy"></iframe>
                         </div>
-                        <div class="visual-content">
-                            <div class="placeholder-img" style="background: linear-gradient(135deg, #00336620, #00336640);">
-                                <span>Infrastructure Moderne</span>
-                            </div>
+                        <div class="map-actions">
+                            <a href="https://maps.app.goo.gl/GV83RS4uENZUgqns9" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Itineraire</a>
                         </div>
                     </div>
-                    <div class="toggle-container">
-                        <button class="arrow-toggle" type="button">
-                            <span class="arrow-icon">▼</span>
-                        </button>
-                    </div>
-                    <div class="hidden-details">
-                        <div class="container">
-                            <div class="map-card" style="flex: 1;"> 
-                                <h3 class="map-title">Notre Localisation</h3>
-            
-                                <div class="map-wrapper">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3395.857393342101!2d4.8439205!3d36.6739559!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128d2501b5c59017%3A0xf38357349ca1e7!2sAbattoir%20Communal%20d'El-Kseur!5e1!3m2!1sfr!2sdz!4v1776690008130!5m2!1sfr!2sdz" 
-                                     width="100%" height="300" style="border:0;" 
-                                     allowfullscreen="" loading="lazy">
-                                    </iframe>
-                                    <div class="map-actions">
-                                        <a href="https://maps.app.goo.gl/GMhoYFZ73YMrJjkd8" target="_blank" rel="noopener noreferrer" class="btn-map">Itinéraire</a>
-                                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe1GchKCfmxslfe9oRF4XU6srnMtNnbRWnC62Srn6IF9Uvimw/viewform?usp=header" target="_blank" class="btn-map">Réserver</a>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            <div class="hours-card" style="flex: 1;">
-                                <h3 class="map-title">Horaires d'ouverture</h3>
-                                <table class="hours-table">
-                                    <tr><td>Samedi</td><td>06:30 - 14:00</td></tr>
-                                </table>
-                
-                            </div>
-                        </div>
+                    <div class="location-card">
+                        <h3>Horaires d'ouverture</h3>
+                        <table class="hours-table">
+                            <tr><td>Dimanche - Samedi</td><td>24h/24</td></tr>
+                        </table>
                     </div>
                 </div>
-            </section>
+            </div>
+        </div>
+    </section>
 
-            <!-- Parkings -->
-            <section id="parkings" class="content-section alt-bg">
-                <div class="container">
-                    <div class="section-header">
-                        <h2>Parkings 24h/24 7j/7</h2>
-                        <span class="section-badge">Sécurité Maximale</span>
-                    </div>
-                    <div class="section-content">
-                        <div class="text-content">
-                            <p>Solutions de stationnement intelligent et sécurisé:</p>
-                            <ul>
-                                <li>Surveillance vidéo 24h/24</li>
-                                <li>Accès contrôlé et badge</li>
-                                <li>Tarification flexible</li>
-                                <li>Maintenance régulière des espaces</li>
-                            </ul>
-                       </div>
-                        <div class="section-content reverse">
-                            <div class="placeholder-img" style="background: linear-gradient(135deg, #00336620, #00336640);">
-                                <span>Parking Sécurisé</span>
-                            </div>
-                        </div> 
-                    </div>
-                        <button class="arrow-toggle" type="button">
-                            <span class="arrow-icon">▼</span>
-                        </button>
-                    
-                    <div class="hidden-details">
-                        <div class="container">
-                            <div class="map-card" style="flex: 1;"> 
-                                <h3 class="map-title">Notre Localisation</h3>
-            
-                                <div class="map-wrapper">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d673.7811093788429!2d4.855516746648653!3d36.67879454551902!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sfr!2sdz!4v1776692332756!5m2!1sfr!2sdz" 
-                                     width="100%" height="300" style="border:0;" 
-                                     allowfullscreen="" loading="lazy">
-                                    </iframe>
-                                    <div class="map-actions">
-                                        <a href="https://maps.app.goo.gl/KE6nNfSdcnJnxbTq7" target="_blank" rel="noopener noreferrer" class="btn-map">Itinéraire</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="hours-card" style="flex: 1;">
-                                <h3 class="map-title">Horaires d'ouverture</h3>
-                                <table class="hours-table">
-                                    <tr><td>Dimanche - Samedi</td><td>24h/24</td></tr>
-                                </table>
-                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="parkings" class="content-section alt-bg">
-                <div class="container">
-                    <div class="section-header">
-                        <h2>Parkings Moto 24h/24 7j/7</h2>
-                        <span class="section-badge">Sécurité Maximale</span>
-                    </div>
-                    <div class="section-content">
-                        <div class="text-content">
-                            <p>Solutions de stationnement intelligent et sécurisé:</p>
-                            <ul>
-                                <li>Surveillance vidéo 24h/24</li>
-                                <li>Accès contrôlé et badge</li>
-                                <li>Tarification flexible</li>
-                                <li>Maintenance régulière des espaces</li>
-                            </ul>
-                       </div>
-                        <div class="section-content reverse">
-                            <div class="placeholder-img" style="background: linear-gradient(135deg, #00336620, #00336640);">
-                                <span>Parking Sécurisé</span>
-                            </div>
-                        </div> 
-                    </div>
-                        <button class="arrow-toggle" type="button">
-                            <span class="arrow-icon">▼</span>
-                        </button>
-                    
-                    <div class="hidden-details">
-                        <div class="container">
-                            <div class="map-card" style="flex: 1;"> 
-                                <h3 class="map-title">Notre Localisation</h3>
-            
-                                <div class="map-wrapper">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d336.873800708184!2d4.863054201867585!3d36.682632788736505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128d2532b2a48537%3A0x5f98c88cc0445ada!2sMVM7%2B36X%2C%20El%20Kseur!5e1!3m2!1sfr!2sdz!4v1776804427949!5m2!1sfr!2sdz" 
-                                     width="100%" height="300" style="border:0;" 
-                                     allowfullscreen="" loading="lazy">
-                                    </iframe>
-                                    <div class="map-actions">
-                                        <a href="https://maps.app.goo.gl/GV83RS4uENZUgqns9" target="_blank" rel="noopener noreferrer" class="btn-map">Itinéraire</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="hours-card" style="flex: 1;">
-                                <h3 class="map-title">Horaires d'ouverture</h3>
-                                <table class="hours-table">
-                                    <tr><td>Dimanche - Samedi</td><td>24h/24</td></tr>
-                                </table>
-                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-     <!-- Footer -->
-     <footer class="main-footer">
+    <!-- Footer -->
+    <footer class="main-footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Ets HADROUG RAZIK</h4>
-                    <p>Votre partenaire de confiance pour un développement durable.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>Email: contact@groupediversifie.com</p>
-                    <p>Tél: +XXX XX XX XX XX</p>
+                <div class="footer-brand">
+                    <div class="logo-text">Ets. <span>Hadroug Razik</span></div>
+                    <p>Votre partenaire de confiance pour un developpement durable. Un groupe diversifie engage dans la construction, la gestion d'infrastructures, le commerce et les services.</p>
                 </div>
                 <div class="footer-section">
                     <h4>Navigation</h4>
@@ -337,13 +302,26 @@
                         <li><a href="etb-tce.html">ETB TCE</a></li>
                     </ul>
                 </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Email: contact@hadrougrazik.dz</li>
+                        <li>Tel: +213 (0)34 XX XX XX</li>
+                        <li>El Kseur, Bejaia, Algerie</li>
+                    </ul>
+                </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Ets HADROUG RAZIK. Tous droits réservés.</p>
+                <p>&copy; 2024 Ets. Hadroug Razik. Tous droits reserves.</p>
             </div>
         </div>
-     </footer>
+    </footer>
 
-     <script src="js/main.js"></script>
-    </body>
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+        <svg viewBox="0 0 24 24"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
 </html>

@@ -1,26 +1,29 @@
-<!-- etb-tce.html - Pillar 4 -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ETB TCE - Ets Hadroug Razik</title>
+    <title>ETB TCE - Ets. Hadroug Razik</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="theme-etb">
+<body>
     <!-- Header -->
-    <header class="main-header">
+    <header class="main-header" id="header">
         <div class="container">
-            <div class="logo">
-                <h1>Ets.<span class="highlight">HADROUG RAZIK</span></h1>
-            </div>
+            <a href="index.html" class="logo">
+                <div class="logo-mark">HR</div>
+                <div class="logo-text">Ets. <span>Hadroug Razik</span></div>
+            </a>
             <nav class="main-nav">
-                <button class="mobile-menu-toggle" aria-label="Menu">
+                <button class="mobile-menu-toggle" id="menuToggle" aria-label="Menu">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
-                <ul class="nav-list">
+                <ul class="nav-list" id="navList">
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="infrastructures.html">Infrastructures</a></li>
                     <li><a href="magasins.html">Magasins</a></li>
@@ -32,267 +35,279 @@
     </header>
 
     <!-- Page Hero -->
-    <section class="page-hero industrial">
-        <div class="container">
-            <h1>ETB TCE</h1>
-            <p>Entreprise de Travaux du Bâtiment et Tous Corps d'État</p>
-            <a href="index.html" class="back-home">← Retour à l'accueil</a>
+    <section class="page-hero">
+        <div class="hero-image">
+            <img src="assets/hero-etb.jpg" alt="ETB TCE - Travaux du Batiment">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-label">Entreprise de Travaux du Batiment</div>
+            <h1 class="hero-title">ETB TCE</h1>
+            <p class="hero-subtitle">Travaux publics, batiment, hydraulique et tous corps d'etat. Votre partenaire construction cle en main depuis plus de 25 ans.</p>
         </div>
     </section>
 
     <!-- Credentials Bar -->
     <section class="credentials-bar">
         <div class="container">
-            <div class="credentials-grid">
+            <div class="credentials-grid reveal">
                 <div class="credential">
                     <span class="cred-number">25+</span>
-                    <span class="cred-label">Années d'expérience</span>
+                    <span class="cred-label">Annees d'experience</span>
                 </div>
                 <div class="credential">
                     <span class="cred-number">150+</span>
-                    <span class="cred-label">Projets réalisés</span>
+                    <span class="cred-label">Projets realises</span>
                 </div>
                 <div class="credential">
                     <span class="cred-number">ISO 9001</span>
-                    <span class="cred-label">Certifié Qualité</span>
+                    <span class="cred-label">Certifie Qualite</span>
                 </div>
                 <div class="credential">
                     <span class="cred-number">100%</span>
-                    <span class="cred-label">Engagement sécurité</span>
+                    <span class="cred-label">Engagement securite</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Main Content -->
-    <main class="etb-main">
+    <!-- Travaux Publics -->
+    <section id="travaux-publics" class="etb-section">
         <div class="container">
-            
-            <!-- Travaux Publics -->
-            <section id="travaux-publics" class="etb-section">
-                <div class="section-split">
-                    <div class="section-visual">
-                        <div class="industrial-img" style="background: linear-gradient(135deg, #33333330, #33333360);">
-                            <span>Infrastructure Routière</span>
-                        </div>
-                    </div>
-                    <div class="section-content-box">
-                        <h2>Travaux Publics</h2>
-                        <p class="lead">Maîtrise des infrastructures lourdes et aménagements urbains.</p>
-                        <ul class="expertise-list">
-                            <li>
-                                <strong>Réseaux divers</strong>
-                                <span>Eau potable, assainissement, électricité, télécommunications</span>
-                            </li>
-                            <li>
-                                <strong>Voirie et réseaux</strong>
-                                <span>Construction et réhabilitation de chaussées</span>
-                            </li>
-                            <li>
-                                <strong>Ouvrages d'art</strong>
-                                <span>Ponts, dalots, murs de soutènement</span>
-                            </li>
-                            <li>
-                                <strong>Aménagement urbain</strong>
-                                <span>Places publiques, espaces verts, mobiliers urbains</span>
-                            </li>
-                        </ul>
-                    </div>
+            <div class="feature-grid reveal">
+                <div class="feature-visual">
+                    <img src="assets/hero-etb.jpg" alt="Travaux Publics">
+                    <div class="feature-visual-badge">Infrastructure Lourde</div>
                 </div>
-            </section>
-
-            <!-- Bâtiment -->
-            <section id="batiment" class="etb-section alt">
-                <div class="section-split reverse">
-                    <div class="section-content-box">
-                        <h2>Bâtiment</h2>
-                        <p class="lead">Construction neuve et réhabilitation dans tous les segments.</p>
-                        <ul class="expertise-list">
-                            <li>
-                                <strong>Résidentiel</strong>
-                                <span>Logements collectifs et individuels, cités</span>
-                            </li>
-                            <li>
-                                <strong>Tertiaire</strong>
-                                <span>Bureaux, commerces, centres d'affaires</span>
-                            </li>
-                            <li>
-                                <strong>Industriel</strong>
-                                <span>Hangars, usines, plateformes logistiques</span>
-                            </li>
-                            <li>
-                                <strong>Institutionnel</strong>
-                                <span>Écoles, centres de santé, bâtiments publics</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="section-visual">
-                        <div class="industrial-img" style="background: linear-gradient(135deg, #33333330, #33333360);">
-                            <span>Construction Moderne</span>
-                        </div>
-                    </div>
+                <div class="feature-content">
+                    <div class="feature-content-label">Expertise</div>
+                    <h2>Travaux Publics</h2>
+                    <p>Maitrise des infrastructures lourdes et amenagements urbains. Nous concevons et realisons vos projets d'infrastructure avec precision et engagement.</p>
+                    <ul class="feature-list">
+                        <li>
+                            <strong>Reseaux divers</strong>
+                            <span>Eau potable, assainissement, electricite, telecommunications</span>
+                        </li>
+                        <li>
+                            <strong>Voirie et reseaux</strong>
+                            <span>Construction et rehabilitation de chaussées et routes</span>
+                        </li>
+                        <li>
+                            <strong>Ouvrages d'art</strong>
+                            <span>Ponts, dalots, murs de soutenement et passerelles</span>
+                        </li>
+                        <li>
+                            <strong>Amenagement urbain</strong>
+                            <span>Places publiques, espaces verts, mobiliers urbains</span>
+                        </li>
+                    </ul>
                 </div>
-            </section>
-
-            <!-- Hydraulique -->
-            <section id="hydraulique" class="etb-section">
-                <div class="section-split">
-                    <div class="section-visual">
-                        <div class="industrial-img" style="background: linear-gradient(135deg, #33333330, #33333360);">
-                            <span>Ouvrage Hydraulique</span>
-                        </div>
-                    </div>
-                    <div class="section-content-box">
-                        <h2>Hydraulique</h2>
-                        <p class="lead">Maîtrise de l'eau et aménagements hydrauliques.</p>
-                        <ul class="expertise-list">
-                            <li>
-                                <strong>Adduction d'eau</strong>
-                                <span>Captage, traitement et distribution</span>
-                            </li>
-                            <li>
-                                <strong>Assainissement</strong>
-                                <span>Collecte et traitement des eaux usées</span>
-                            </li>
-                            <li>
-                                <strong>Aménagements</strong>
-                                <span>Barrages, retenues, canaux d'irrigation</span>
-                            </li>
-                            <li>
-                                <strong>Drainage</strong>
-                                <span>Protection contre les inondations</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Tous Corps d'État -->
-            <section id="tce" class="etb-section alt">
-                <div class="section-split reverse">
-                    <div class="section-content-box">
-                        <h2>Tous Corps d'État (TCE)</h2>
-                        <p class="lead">Coordination globale et réalisation clé en main.</p>
-                        <div class="tce-grid">
-                            <div class="tce-item">
-                                <h4>Gros Œuvre</h4>
-                                <p>Structure, maçonnerie, étanchéité</p>
-                            </div>
-                            <div class="tce-item">
-                                <h4>Second Œuvre</h4>
-                                <p>Menuiserie, plâtrerie, peinture</p>
-                            </div>
-                            <div class="tce-item">
-                                <h4>Électricité</h4>
-                                <p>Haute et basse tension, domotique</p>
-                            </div>
-                            <div class="tce-item">
-                                <h4>Plomberie</h4>
-                                <p>Sanitaire, chauffage, climatisation</p>
-                            </div>
-                            <div class="tce-item">
-                                <h4>Revêtements</h4>
-                                <p>Sols, murs, façades</p>
-                            </div>
-                            <div class="tce-item">
-                                <h4>Aménagements</h4>
-                                <p>Cuisines, salles de bain, espaces</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="section-visual">
-                        <div class="industrial-img" style="background: linear-gradient(135deg, #33333330, #33333360);">
-                            <span>Chantier TCE</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Portfolio Gallery -->
-            <section class="portfolio-section">
-                <h2 class="section-title center">Réalisations Récentes</h2>
-                <div class="portfolio-grid">
-                    <div class="portfolio-item">
-                        <div class="portfolio-img" style="background: #444;">
-                            <span>Projet 1</span>
-                        </div>
-                        <div class="portfolio-overlay">
-                            <h4>Centre Commercial</h4>
-                            <p>Construction clé en main - 2023</p>
-                        </div>
-                    </div>
-                    <div class="portfolio-item">
-                        <div class="portfolio-img" style="background: #555;">
-                            <span>Projet 2</span>
-                        </div>
-                        <div class="portfolio-overlay">
-                            <h4>Résidence HLM</h4>
-                            <p>120 logements - 2023</p>
-                        </div>
-                    </div>
-                    <div class="portfolio-item">
-                        <div class="portfolio-img" style="background: #666;">
-                            <span>Projet 3</span>
-                        </div>
-                        <div class="portfolio-overlay">
-                            <h4>Station d'épuration</h4>
-                            <p>Hydraulique urbain - 2022</p>
-                        </div>
-                    </div>
-                    <div class="portfolio-item">
-                        <div class="portfolio-img" style="background: #444;">
-                            <span>Projet 4</span>
-                        </div>
-                        <div class="portfolio-overlay">
-                            <h4>Pont Routier</h4>
-                            <p>Ouvrage d'art - 2022</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Certifications -->
-            <section class="certifications-section">
-                <h2 class="section-title center">Nos Agréments & Certifications</h2>
-                <div class="certs-grid">
-                    <div class="cert-card">
-                        <div class="cert-icon">🏆</div>
-                        <h4>ISO 9001:2015</h4>
-                        <p>Management de la qualité</p>
-                    </div>
-                    <div class="cert-card">
-                        <div class="cert-icon">🛡️</div>
-                        <h4>ISO 45001</h4>
-                        <p>Santé et sécurité au travail</p>
-                    </div>
-                    <div class="cert-card">
-                        <div class="cert-icon">🌿</div>
-                        <h4>ISO 14001</h4>
-                        <p>Management environnemental</p>
-                    </div>
-                    <div class="cert-card">
-                        <div class="cert-icon">📋</div>
-                        <h4>Agrément Technique</h4>
-                        <p>Ministère de l'Équipement</p>
-                    </div>
-                </div>
-            </section>
-
+            </div>
         </div>
-    </main>
+    </section>
+
+    <!-- Batiment -->
+    <section id="batiment" class="etb-section">
+        <div class="container">
+            <div class="feature-grid reverse reveal">
+                <div class="feature-content">
+                    <div class="feature-content-label">Construction</div>
+                    <h2>Batiment</h2>
+                    <p>Construction neuve et rehabilitation dans tous les segments. De la fondation a la livraison, nous batissons vos projets avec excellence.</p>
+                    <ul class="feature-list">
+                        <li>
+                            <strong>Residentiel</strong>
+                            <span>Logements collectifs et individuels, cites et residences</span>
+                        </li>
+                        <li>
+                            <strong>Tertiaire</strong>
+                            <span>Bureaux, commerces, centres d'affaires</span>
+                        </li>
+                        <li>
+                            <strong>Industriel</strong>
+                            <span>Hangars, usines, plateformes logistiques</span>
+                        </li>
+                        <li>
+                            <strong>Institutionnel</strong>
+                            <span>Ecoles, centres de sante, batiments publics</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="feature-visual">
+                    <img src="assets/hero-etb.jpg" alt="Construction Batiment">
+                    <div class="feature-visual-badge">Construction Neuve</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hydraulique -->
+    <section id="hydraulique" class="etb-section">
+        <div class="container">
+            <div class="feature-grid reveal">
+                <div class="feature-visual">
+                    <img src="assets/hero-etb.jpg" alt="Hydraulique">
+                    <div class="feature-visual-badge">Maitrise de l'Eau</div>
+                </div>
+                <div class="feature-content">
+                    <div class="feature-content-label">Amenagements</div>
+                    <h2>Hydraulique</h2>
+                    <p>Maitrise de l'eau et amenagements hydrauliques. Des solutions durables pour la gestion et la preservation des ressources en eau.</p>
+                    <ul class="feature-list">
+                        <li>
+                            <strong>Adduction d'eau</strong>
+                            <span>Captage, traitement et distribution d'eau potable</span>
+                        </li>
+                        <li>
+                            <strong>Assainissement</strong>
+                            <span>Collecte et traitement des eaux usees</span>
+                        </li>
+                        <li>
+                            <strong>Amenagements</strong>
+                            <span>Barrages, retenues, canaux d'irrigation</span>
+                        </li>
+                        <li>
+                            <strong>Drainage</strong>
+                            <span>Protection contre les inondations et evacuations</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tous Corps d'Etat -->
+    <section id="tce" class="etb-section">
+        <div class="container">
+            <div class="feature-grid reverse reveal">
+                <div class="feature-content">
+                    <div class="feature-content-label">Coordination Globale</div>
+                    <h2>Tous Corps d'Etat (TCE)</h2>
+                    <p>Coordination globale et realisation cle en main. Un seul interlocuteur pour l'integralite de votre projet, de la conception a la livraison.</p>
+                    <div class="tce-grid">
+                        <div class="tce-item">
+                            <h4>Gros Oeuvre</h4>
+                            <p>Structure, maconnerie, etancheite</p>
+                        </div>
+                        <div class="tce-item">
+                            <h4>Second Oeuvre</h4>
+                            <p>Menuiserie, platrerie, peinture</p>
+                        </div>
+                        <div class="tce-item">
+                            <h4>Electricite</h4>
+                            <p>Haute et basse tension, domotique</p>
+                        </div>
+                        <div class="tce-item">
+                            <h4>Plomberie</h4>
+                            <p>Sanitaire, chauffage, climatisation</p>
+                        </div>
+                        <div class="tce-item">
+                            <h4>Revetements</h4>
+                            <p>Sols, murs, façades</p>
+                        </div>
+                        <div class="tce-item">
+                            <h4>Amenagements</h4>
+                            <p>Cuisines, salles de bain, espaces</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-visual">
+                    <img src="assets/hero-etb.jpg" alt="Tous Corps d'Etat">
+                    <div class="feature-visual-badge">Cle en Main</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="portfolio-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-label">Nos realisations</div>
+                <h2 class="section-title">Realisations Recentes</h2>
+                <p class="section-desc">Un apercu de nos projets les plus marquants ces dernieres annees.</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item reveal reveal-delay-1">
+                    <div class="portfolio-img">Centre Commercial</div>
+                    <div class="portfolio-overlay">
+                        <h4>Centre Commercial</h4>
+                        <p>Construction cle en main - 2023</p>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal reveal-delay-2">
+                    <div class="portfolio-img">Residence HLM</div>
+                    <div class="portfolio-overlay">
+                        <h4>Residence HLM</h4>
+                        <p>120 logements - 2023</p>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal reveal-delay-3">
+                    <div class="portfolio-img">Station d'epuration</div>
+                    <div class="portfolio-overlay">
+                        <h4>Station d'epuration</h4>
+                        <p>Hydraulique urbain - 2022</p>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal reveal-delay-4">
+                    <div class="portfolio-img">Pont Routier</div>
+                    <div class="portfolio-overlay">
+                        <h4>Pont Routier</h4>
+                        <p>Ouvrage d'art - 2022</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="certifications-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-label">Qualite & Engagement</div>
+                <h2 class="section-title">Nos Agrements & Certifications</h2>
+                <p class="section-desc">Des certifications internationales qui garantissent notre engagement qualite, securite et environnement.</p>
+            </div>
+            <div class="certs-grid">
+                <div class="cert-card reveal reveal-delay-1">
+                    <div class="cert-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 004.561 21h14.878a2 2 0 001.94-1.515L22 17"/></svg>
+                    </div>
+                    <h4>ISO 9001:2015</h4>
+                    <p>Management de la qualite</p>
+                </div>
+                <div class="cert-card reveal reveal-delay-2">
+                    <div class="cert-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h4>ISO 45001</h4>
+                    <p>Sante et securite au travail</p>
+                </div>
+                <div class="cert-card reveal reveal-delay-3">
+                    <div class="cert-icon">
+                        <svg viewBox="0 0 24 24"><path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.3c.48.17.98.3 1.34.3C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8z"/></svg>
+                    </div>
+                    <h4>ISO 14001</h4>
+                    <p>Management environnemental</p>
+                </div>
+                <div class="cert-card reveal reveal-delay-4">
+                    <div class="cert-icon">
+                        <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
+                    </div>
+                    <h4>Agrement Technique</h4>
+                    <p>Ministere de l'Equipement</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="main-footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Ets HADROUG RAZIK</h4>
-                    <p>Votre partenaire de confiance pour un développement durable.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>Email: contact@groupediversifie.com</p>
-                    <p>Tél: +XXX XX XX XX XX</p>
+                <div class="footer-brand">
+                    <div class="logo-text">Ets. <span>Hadroug Razik</span></div>
+                    <p>Votre partenaire de confiance pour un developpement durable. Un groupe diversifie engage dans la construction, la gestion d'infrastructures, le commerce et les services.</p>
                 </div>
                 <div class="footer-section">
                     <h4>Navigation</h4>
@@ -304,12 +319,25 @@
                         <li><a href="etb-tce.html">ETB TCE</a></li>
                     </ul>
                 </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Email: contact@hadrougrazik.dz</li>
+                        <li>Tel: +213 (0)34 XX XX XX</li>
+                        <li>El Kseur, Bejaia, Algerie</li>
+                    </ul>
+                </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Ets HADROUG RAZIK. Tous droits réservés.</p>
+                <p>&copy; 2024 Ets. Hadroug Razik. Tous droits reserves.</p>
             </div>
         </div>
     </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+        <svg viewBox="0 0 24 24"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
 
     <script src="js/main.js"></script>
 </body>

@@ -1,26 +1,29 @@
-<!-- services.html - Pillar 3 -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - Ets Hadroug Razik</title>
+    <title>Nos Services - Ets. Hadroug Razik</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="theme-services">
+<body>
     <!-- Header -->
-    <header class="main-header">
+    <header class="main-header" id="header">
         <div class="container">
-            <div class="logo">
-                <h1>Ets.<span class="highlight">HADROUG RAZIK</span></h1>
-            </div>
+            <a href="index.html" class="logo">
+                <div class="logo-mark">HR</div>
+                <div class="logo-text">Ets. <span>Hadroug Razik</span></div>
+            </a>
             <nav class="main-nav">
-                <button class="mobile-menu-toggle" aria-label="Menu">
+                <button class="mobile-menu-toggle" id="menuToggle" aria-label="Menu">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
-                <ul class="nav-list">
+                <ul class="nav-list" id="navList">
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="infrastructures.html">Infrastructures</a></li>
                     <li><a href="magasins.html">Magasins</a></li>
@@ -33,208 +36,211 @@
 
     <!-- Page Hero -->
     <section class="page-hero">
-        <div class="container">
-            <h1>Nos Services</h1>
-            <p>Solutions professionnelles et logistiques sur mesure</p>
-            <a href="index.html" class="back-home">← Retour à l'accueil</a>
+        <div class="hero-image">
+            <img src="assets/hero-services.jpg" alt="Nos Services">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-label">Solutions Professionnelles</div>
+            <h1 class="hero-title">Nos Services</h1>
+            <p class="hero-subtitle">Solutions professionnelles et logistiques sur mesure pour particuliers et entreprises.</p>
         </div>
     </section>
 
-    <!-- Services List -->
+    <!-- Services Main -->
     <main class="services-main">
         <div class="container">
-            <section id="bureau" class="service-detail-card">
-                <div class="service-header">
-                    <div class="service-icon-large">✂️</div>
-                    <div class="service-title-wrap">
-                        <h2>Salon de Beauté & Bien-être</h2>
-                        <p class="service-subtitle">Soins, Coiffure & Esthétique</p>
+            <!-- Salon de Beaute -->
+            <section id="beaute" class="service-card reveal">
+                <div class="service-card-header">
+                    <div class="service-icon-wrap">
+                        <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                    </div>
+                    <div class="service-title-group">
+                        <h2>Salon de Beaute & Bien-etre</h2>
+                        <p class="service-subtitle">Soins, Coiffure & Esthetique</p>
                     </div>
                 </div>
-                <div class="service-body">
+                <div class="service-card-body">
                     <div class="service-description">
-                        <p>Un espace bien-être moderne dédié aux soins complets pour hommes et femmes.</p>
+                        <p>Un espace bien-etre moderne dedie aux soins complets pour hommes et femmes. Notre equipe de professionnels vous accueille dans un cadre raffine et relaxant.</p>
                         <ul class="service-features">
-                            <li><strong>Barber & Coiffure Homme :</strong> Coupes, taille de barbe et soins.</li>
-                            <li><strong>Coiffure Femme :</strong> Coupes, colorations et soins capillaires.</li>
-                            <li><strong>Soins de la Peau :</strong> Soin du visage et traitements hydratants.</li>
-                            <li><strong>Esthétique :</strong> Manucure, pédicure et soins corporels.</li>
+                            <li><strong>Barber & Coiffure Homme :</strong> Coupes tendance, taille de barbe et soins capillaires</li>
+                            <li><strong>Coiffure Femme :</strong> Coupes, colorations, mise en pli et soins capillaires</li>
+                            <li><strong>Soins de la Peau :</strong> Soin du visage, traitements hydratants et anti-age</li>
+                            <li><strong>Esthetique :</strong> Manucure, pedicure, epilation et soins corporels</li>
                         </ul>
                     </div>
                     <div class="service-cta">
                         <div class="cta-box">
-                            <h3>Espace de travail flexible</h3>
-                            <a href="tel:+213XXXXXXXXX" class="btn-primary">
-                                <i class="fas fa-phone-alt"></i> Appeler pour réserver
-                            </a>
-                            <button class="btn-secondary">Visite virtuelle</button>
+                            <h3>Prenez rendez-vous</h3>
+                            <p>Reservation recommandee pour garantir votre creneau.</p>
+                            <a href="tel:+213XXXXXXXXX" class="btn btn-primary">Appeler pour reserver</a>
+                            <button class="btn btn-outline">Visite virtuelle</button>
                         </div>
                     </div>
                 </div>
             </section>
 
             <!-- Transport sous froid -->
-            <section id="transport" class="service-detail-card">
-                <div class="service-header">
-                    <div class="service-icon-large">🚛</div>
-                    <div class="service-title-wrap">
+            <section id="transport" class="service-card reveal">
+                <div class="service-card-header">
+                    <div class="service-icon-wrap">
+                        <svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                    </div>
+                    <div class="service-title-group">
                         <h2>Transport sous Froid</h2>
                         <p class="service-subtitle">Logistique frigorifique professionnelle</p>
                     </div>
                 </div>
-                <div class="service-body">
+                <div class="service-card-body">
                     <div class="service-description">
-                        <p>Flotte moderne de véhicules frigorifiques pour le transport de produits sensibles aux températures contrôlées.</p>
+                        <p>Flotte moderne de vehicules frigorifiques pour le transport de produits sensibles aux temperatures controlees. Vos marchandises en parfaite securite de la prise en charge a la livraison.</p>
                         <ul class="service-features">
-                            <li><strong>Flotte diversifiée:</strong> Du petit utilitaire au poids lourd</li>
-                            <li><strong>Monitoring GPS:</strong> Suivi en temps réel des températures</li>
-                            <li><strong>Certifications:</strong> Normes HACCP respectées</li>
-                            <li><strong>Couverture:</strong> Nationale et sous-régionale</li>
+                            <li><strong>Flotte diversifiee :</strong> Du petit utilitaire au poids lourd, adapte a vos besoins</li>
+                            <li><strong>Monitoring GPS :</strong> Suivi en temps reel des temperatures et de la position</li>
+                            <li><strong>Certifications :</strong> Normes HACCP respectees, traçabilite garantie</li>
+                            <li><strong>Couverture :</strong> Transport national et sous-regional</li>
                         </ul>
                     </div>
                     <div class="service-cta">
                         <div class="cta-box">
                             <h3>Besoin d'un devis ?</h3>
-                            <p>Transport express ou régulier, nous adaptons nos solutions.</p>
-                            <button class="btn-primary">Demander un devis</button>
-                            <button class="btn-secondary">Consulter la flotte</button>
+                            <p>Transport express ou regulier, nous adaptons nos solutions a vos contraintes.</p>
+                            <button class="btn btn-primary">Demander un devis</button>
+                            <button class="btn btn-outline">Consulter la flotte</button>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Location de véhicules -->
-            <section id="location" class="service-detail-card alt">
-                <div class="service-header">
-                    <div class="service-icon-large">🚗</div>
-                    <div class="service-title-wrap">
-                        <h2>Location de Véhicules</h2>
-                        <p class="service-subtitle">Courte, moyenne et longue durée</p>
+            <!-- Location de vehicules -->
+            <section id="location" class="service-card reveal">
+                <div class="service-card-header">
+                    <div class="service-icon-wrap">
+                        <svg viewBox="0 0 24 24"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 002 12v4c0 .6.4 1 1 1h2M7 17h10M5 17v2a1 1 0 001 1h2a1 1 0 001-1v-2m10-2v2a1 1 0 001 1h2a1 1 0 001-1v-2M9 10h4"/></svg>
+                    </div>
+                    <div class="service-title-group">
+                        <h2>Location de Vehicules</h2>
+                        <p class="service-subtitle">Courte, moyenne et longue duree</p>
                     </div>
                 </div>
-                <div class="service-body">
+                <div class="service-card-body">
                     <div class="service-description">
-                        <p>Parc automobile récent et entretenu pour répondre à tous vos besoins de mobilité professionnelle ou personnelle.</p>
+                        <p>Parc automobile recent et entretenu pour repondre a tous vos besoins de mobilite professionnelle ou personnelle.</p>
                         <div class="vehicle-types">
-                            <div class="vehicle-type">
-                                <span class="v-icon">🚙</span>
-                                <span>Véhicules légers</span>
-                            </div>
-                            <div class="vehicle-type">
-                                <span class="v-icon">🚐</span>
-                                <span>Utilitaires</span>
-                            </div>
-                            <div class="vehicle-type">
-                                <span class="v-icon">🚚</span>
-                                <span>Camions</span>
-                            </div>
-                            <div class="vehicle-type">
-                                <span class="v-icon">🚌</span>
-                                <span>Transport en commun</span>
-                            </div>
+                            <div class="vehicle-type">Vehicules legers</div>
+                            <div class="vehicle-type">Utilitaires</div>
+                            <div class="vehicle-type">Camions</div>
+                            <div class="vehicle-type">Transport en commun</div>
                         </div>
                     </div>
                     <div class="service-cta">
                         <div class="cta-box">
-                            <h3>Réservez maintenant</h3>
-                            <p>Tarifs compétitifs, assurance incluse, assistance 24h/24.</p>
-                            <button class="btn-primary">Voir les disponibilités</button>
-                            <button class="btn-secondary">Conditions de location</button>
+                            <h3>Reservez maintenant</h3>
+                            <p>Tarifs competitifs, assurance incluse, assistance 24h/24.</p>
+                            <button class="btn btn-primary">Voir les disponibilites</button>
+                            <button class="btn btn-outline">Conditions de location</button>
                         </div>
                     </div>
                 </div>
             </section>
 
             <!-- Bureau d'affaires -->
-            <section id="bureau" class="service-detail-card">
-                <div class="service-header">
-                    <div class="service-icon-large">💼</div>
-                    <div class="service-title-wrap">
+            <section id="bureau" class="service-card reveal">
+                <div class="service-card-header">
+                    <div class="service-icon-wrap">
+                        <svg viewBox="0 0 24 24"><path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+                    </div>
+                    <div class="service-title-group">
                         <h2>Bureau d'Affaires</h2>
                         <p class="service-subtitle">Espaces professionnels et services administratifs</p>
                     </div>
                 </div>
-                <div class="service-body">
+                <div class="service-card-body">
                     <div class="service-description">
-                        <p>Centre d'affaires moderne offrant des solutions clés en main pour entrepreneurs et entreprises.</p>
+                        <p>Centre d'affaires moderne offrant des solutions cles en main pour entrepreneurs et entreprises. Travaillez dans un environnement professionnel et stimulant.</p>
                         <ul class="service-features">
-                            <li><strong>Bureaux équipés:</strong> Location à l'heure, jour ou mois</li>
-                            <li><strong>Salle de réunion:</strong> Équipement vidéo-conférence</li>
-                            <li><strong>Domicialiation:</strong> Adresse commerciale prestigieuse</li>
-                            <li><strong>Secrétariat:</strong> Gestion d'appels et courrier</li>
+                            <li><strong>Bureaux equipes :</strong> Location a l'heure, jour ou mois selon vos besoins</li>
+                            <li><strong>Salle de reunion :</strong> Equipement video-conference et presentation</li>
+                            <li><strong>Domiciliation :</strong> Adresse commerciale prestigieuse pour votre societe</li>
+                            <li><strong>Secretariat :</strong> Gestion d'appels, courrier et accueil</li>
                         </ul>
                     </div>
                     <div class="service-cta">
                         <div class="cta-box">
                             <h3>Espace de travail flexible</h3>
-                            <p>Du nomade digital à l'entreprise établie.</p>
-                            <button class="btn-primary">Réserver un espace</button>
-                            <button class="btn-secondary">Visite virtuelle</button>
+                            <p>Du nomade digital a l'entreprise etablie, nous avons la solution.</p>
+                            <button class="btn btn-primary">Reserver un espace</button>
+                            <button class="btn btn-outline">Visite virtuelle</button>
                         </div>
                     </div>
                 </div>
             </section>
-            
+
             <!-- Agence Immobiliere -->
-            <section id="bureau" class="service-detail-card">
-                <div class="service-header">
-                    <div class="service-icon-large">🏠</div>
-                    <div class="service-title-wrap">
-                        <h2>Agence Immobilière</h2>
+            <section id="immobilier" class="service-card reveal">
+                <div class="service-card-header">
+                    <div class="service-icon-wrap">
+                        <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><path d="M9 22V12h6v10"/></svg>
+                    </div>
+                    <div class="service-title-group">
+                        <h2>Agence Immobiliere</h2>
                         <p class="service-subtitle">Gestion & Transactions</p>
                     </div>
                 </div>
-                <div class="service-body">
+                <div class="service-card-body">
                     <div class="service-description">
-                        <p>Nous offrons un accompagnement complet et sécurisé pour toutes vos opérations immobilières, alliant expertise du marché local et transparence administrative.</p>
+                        <p>Accompagnement complet et securise pour toutes vos operations immobilieres, alliant expertise du marche local et transparence administrative.</p>
                         <ul class="service-features">
-                            <li><strong>Vente & Achat:</strong> Estimation et mise en relation qualifiée.</li>
-                    <li><strong>Location:</strong> Gestion locative et recherche de biens.</li>
-                    <li><strong>Échange:</strong> Facilitation d'échanges immobiliers sécurisés.</li>
-                    <li><strong>Conseil Juridique:</strong> Assistance dans les procédures administratives.</li>
+                            <li><strong>Vente & Achat :</strong> Estimation precise et mise en relation qualifiee</li>
+                            <li><strong>Location :</strong> Gestion locative complete et recherche de biens</li>
+                            <li><strong>Echange :</strong> Facilitation d'echanges immobiliers securises</li>
+                            <li><strong>Conseil Juridique :</strong> Assistance dans toutes les procedures administratives</li>
                         </ul>
                     </div>
                     <div class="service-cta">
                         <div class="cta-box">
-                            <h3>Espace de travail flexible</h3>
-                            <p>Du nomade digital à l'entreprise établie.</p>
-                            <button class="btn-primary">Réserver un espace</button>
-                            <button class="btn-secondary">Visite virtuelle</button>
+                            <h3>Votre projet immobilier</h3>
+                            <p>Contactez-nous pour une evaluation gratuite de vos besoins.</p>
+                            <button class="btn btn-primary">Prendre rendez-vous</button>
+                            <button class="btn btn-outline">Nos biens</button>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Conseiller général -->
-            <section id="conseiller" class="service-detail-card alt">
-                <div class="service-header">
-                    <div class="service-icon-large">🎯</div>
-                    <div class="service-title-wrap">
-                        <h2>Conseiller Général</h2>
-                        <p class="service-subtitle">Accompagnement stratégique et opérationnel</p>
+            <!-- Conseiller general -->
+            <section id="conseiller" class="service-card reveal">
+                <div class="service-card-header">
+                    <div class="service-icon-wrap">
+                        <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/><path d="M12 16v-4M12 8h.01"/></svg>
+                    </div>
+                    <div class="service-title-group">
+                        <h2>Conseiller General</h2>
+                        <p class="service-subtitle">Accompagnement strategique et operationnel</p>
                     </div>
                 </div>
-                <div class="service-body">
+                <div class="service-card-body">
                     <div class="service-description">
-                        <p>Expertise multidisciplinaire pour accompagner la croissance de votre entreprise et optimiser vos performances.</p>
+                        <p>Expertise multidisciplinaire pour accompagner la croissance de votre entreprise et optimiser vos performances a chaque etape.</p>
                         <ul class="service-features">
-                            <li><strong>Conseil en gestion:</strong> Organisation et performance</li>
-                            <li><strong>Stratégie:</strong> Planification et développement</li>
-                            <li><strong>Financement:</strong> Accès aux ressources et partenaires</li>
-                            <li><strong>Formation:</strong> Montée en compétences équipes</li>
+                            <li><strong>Conseil en gestion :</strong> Organisation, performance et optimisation</li>
+                            <li><strong>Strategie :</strong> Planification, developpement et positionnement</li>
+                            <li><strong>Financement :</strong> Acces aux ressources et partenaires institutionnels</li>
+                            <li><strong>Formation :</strong> Monte en competences de vos equipes</li>
                         </ul>
                     </div>
                     <div class="service-cta">
                         <div class="cta-box">
-                            <h3>Prenez rendez-vous</h3>
-                            <p>Premier diagnostic gratuit pour évaluer vos besoins.</p>
-                            <button class="btn-primary">Planifier un entretien</button>
-                            <button class="btn-secondary">Nos références</button>
+                            <h3>Premier diagnostic gratuit</h3>
+                            <p>Evaluez vos besoins sans engagement avec nos experts.</p>
+                            <button class="btn btn-primary">Planifier un entretien</button>
+                            <button class="btn btn-outline">Nos references</button>
                         </div>
                     </div>
                 </div>
             </section>
-
         </div>
     </main>
 
@@ -242,14 +248,9 @@
     <footer class="main-footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Ets HADROUG RAZIK</h4>
-                    <p>Votre partenaire de confiance pour un développement durable.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>Email: contact@groupediversifie.com</p>
-                    <p>Tél: +XXX XX XX XX XX</p>
+                <div class="footer-brand">
+                    <div class="logo-text">Ets. <span>Hadroug Razik</span></div>
+                    <p>Votre partenaire de confiance pour un developpement durable. Un groupe diversifie engage dans la construction, la gestion d'infrastructures, le commerce et les services.</p>
                 </div>
                 <div class="footer-section">
                     <h4>Navigation</h4>
@@ -261,12 +262,25 @@
                         <li><a href="etb-tce.html">ETB TCE</a></li>
                     </ul>
                 </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Email: contact@hadrougrazik.dz</li>
+                        <li>Tel: +213 (0)34 XX XX XX</li>
+                        <li>El Kseur, Bejaia, Algerie</li>
+                    </ul>
+                </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Ets HADROUG RAZIK. Tous droits réservés.</p>
+                <p>&copy; 2024 Ets. Hadroug Razik. Tous droits reserves.</p>
             </div>
         </div>
     </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+        <svg viewBox="0 0 24 24"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
 
     <script src="js/main.js"></script>
 </body>

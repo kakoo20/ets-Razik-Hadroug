@@ -1,26 +1,29 @@
-<!-- index.html - Landing Page -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ets Hadroug Razik - Accueil</title>
+    <title>Ets. Hadroug Razik - Groupe Diversifie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="theme-home">
+<body>
     <!-- Header -->
-    <header class="main-header">
+    <header class="main-header" id="header">
         <div class="container">
-            <div class="logo">
-                <h1>Ets.<span class="highlight">HADROUG RAZIK</span></h1>
-            </div>
+            <a href="index.html" class="logo">
+                <div class="logo-mark">HR</div>
+                <div class="logo-text">Ets. <span>Hadroug Razik</span></div>
+            </a>
             <nav class="main-nav">
-                <button class="mobile-menu-toggle" aria-label="Menu">
+                <button class="mobile-menu-toggle" id="menuToggle" aria-label="Menu">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
-                <ul class="nav-list">
+                <ul class="nav-list" id="navList">
                     <li><a href="index.html" class="active">Accueil</a></li>
                     <li><a href="infrastructures.html">Infrastructures</a></li>
                     <li><a href="magasins.html">Magasins</a></li>
@@ -32,57 +35,93 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h2 class="hero-title">Excellence & Diversification</h2>
-            <p class="hero-subtitle">Un groupe multidimensionnel au service du développement économique et social</p>
-            <a href="#pillars" class="cta-button">Découvrir nos activités</a>
+    <section class="hero" id="accueil">
+        <div class="hero-image">
+            <img src="assets/hero-home.jpg" alt="Ets. Hadroug Razik - Vue panoramique">
         </div>
-        <div class="hero-pattern"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-label">Groupe Diversifie - Depuis 1999</div>
+            <h1 class="hero-title">Excellence &<br>Diversification</h1>
+            <p class="hero-subtitle">Un groupe multidimensionnel au service du developpement economique et social, allant des infrastructures aux services en passant par le commerce et le BTP.</p>
+            <a href="#piliers" class="hero-cta">
+                Decouvrir nos activites
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <svg viewBox="0 0 24 24"><path d="M7 13l5 5 5-5M7 6l5 5 5-5"/></svg>
+        </div>
     </section>
 
-    <!-- Pillars Grid -->
-    <section id="pillars" class="pillars-section">
+    <!-- Pillars Section -->
+    <section id="piliers" class="pillars-section section-padding">
         <div class="container">
-            <h2 class="section-title">Nos Piliers d'Activité</h2>
+            <div class="section-header reveal">
+                <div class="section-label">Nos domaines d'expertise</div>
+                <h2 class="section-title">Nos Piliers d'Activite</h2>
+                <p class="section-desc">Quatre axes strategiques qui definissent notre engagement envers le developpement local et la croissance economique.</p>
+            </div>
             <div class="pillars-grid">
-                <a href="infrastructures.html" class="pillar-card theme-infra-card">
-                    <div class="pillar-icon">🏗️</div>
+                <a href="infrastructures.html" class="pillar-card reveal reveal-delay-1">
+                    <div class="pillar-icon">
+                        <svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l8-4 8 4v14M9 21v-6h6v6M10 9h4M10 13h4"/></svg>
+                    </div>
                     <h3>Gestion d'Infrastructures</h3>
-                    <p>Marchés, abattoirs, parkings et espaces publics</p>
-                    <span class="pillar-link">Explorer →</span>
+                    <p>Marches hebdomadaires, abattoirs, parkings securises et espaces publics modernes pour servir nos communautes.</p>
+                    <span class="pillar-link">
+                        Explorer
+                        <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </span>
                 </a>
-                
-                <a href="magasins.html" class="pillar-card theme-magasins-card">
-                    <div class="pillar-icon">🛒</div>
+
+                <a href="magasins.html" class="pillar-card reveal reveal-delay-2">
+                    <div class="pillar-icon">
+                        <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>
+                    </div>
                     <h3>Magasins</h3>
-                    <p>Commerce de proximité et distribution alimentaire</p>
-                    <span class="pillar-link">Explorer →</span>
+                    <p>Commerce de proximite et distribution alimentaire : primeur, supérette, boucherie, fast-food et services KMS.</p>
+                    <span class="pillar-link">
+                        Explorer
+                        <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </span>
                 </a>
-                
-                <a href="services.html" class="pillar-card theme-services-card">
-                    <div class="pillar-icon">🚛</div>
+
+                <a href="services.html" class="pillar-card reveal reveal-delay-3">
+                    <div class="pillar-icon">
+                        <svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                    </div>
                     <h3>Services</h3>
-                    <p>Transport, location et conseil d'affaires</p>
-                    <span class="pillar-link">Explorer →</span>
+                    <p>Transport frigorifique, location de vehicules, conseil d'affaires, agence immobiliere et espace de co-working.</p>
+                    <span class="pillar-link">
+                        Explorer
+                        <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </span>
                 </a>
-                
-                <a href="etb-tce.html" class="pillar-card theme-etb-card">
-                    <div class="pillar-icon">🏢</div>
+
+                <a href="etb-tce.html" class="pillar-card reveal reveal-delay-4">
+                    <div class="pillar-icon">
+                        <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 7a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+                    </div>
                     <h3>ETB TCE</h3>
-                    <p>Travaux publics, bâtiment et hydraulique</p>
-                    <span class="pillar-link">Explorer →</span>
+                    <p>Travaux publics, batiment, hydraulique et tous corps d'etat. Votre partenaire construction cle en main.</p>
+                    <span class="pillar-link">
+                        Explorer
+                        <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </span>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Mission Statement -->
-    <section class="mission-section">
+    <!-- Mission Section -->
+    <section class="mission-section section-padding">
         <div class="container">
-            <div class="mission-content">
+            <div class="mission-content reveal">
+                <div class="mission-label">Notre raison d'etre</div>
                 <h2>Notre Mission</h2>
-                <p>Contribuer activement au développement local en proposant des infrastructures modernes, des services de qualité et des solutions adaptées aux besoins de nos communautés. Notre diversité est notre force.</p>
+                <p>Contribuer activement au developpement local en proposant des infrastructures modernes, des services de qualite et des solutions adaptees aux besoins de nos communautes. Notre diversite est notre force - chaque activite renforce les autres pour creer un ecosysteme de valeur durable.</p>
             </div>
         </div>
     </section>
@@ -91,14 +130,9 @@
     <footer class="main-footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Ets HADROUG RAZIK</h4>
-                    <p>Votre partenaire de confiance pour un développement durable.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>Email: contact@groupediversifie.com</p>
-                    <p>Tél: +XXX XX XX XX XX</p>
+                <div class="footer-brand">
+                    <div class="logo-text">Ets. <span>Hadroug Razik</span></div>
+                    <p>Votre partenaire de confiance pour un developpement durable. Un groupe diversifie engage dans la construction, la gestion d'infrastructures, le commerce et les services.</p>
                 </div>
                 <div class="footer-section">
                     <h4>Navigation</h4>
@@ -110,12 +144,25 @@
                         <li><a href="etb-tce.html">ETB TCE</a></li>
                     </ul>
                 </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Email: contact@hadrougrazik.dz</li>
+                        <li>Tel: +213 (0)34 XX XX XX</li>
+                        <li>El Kseur, Bejaia, Algerie</li>
+                    </ul>
+                </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Ets HADROUG RAZIK. Tous droits réservés.</p>
+                <p>&copy; 2024 Ets. Hadroug Razik. Tous droits reserves.</p>
             </div>
         </div>
     </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+        <svg viewBox="0 0 24 24"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
 
     <script src="js/main.js"></script>
 </body>

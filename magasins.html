@@ -1,26 +1,29 @@
-<!-- magasins.html - Pillar 2 -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Magasins - Ets Hadroug Razik</title>
+    <title>Nos Magasins - Ets. Hadroug Razik</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="theme-magasins">
+<body>
     <!-- Header -->
-    <header class="main-header">
+    <header class="main-header" id="header">
         <div class="container">
-            <div class="logo">
-                <h1>Ets.<span class="highlight">HADROUG RAZIK</span></h1>
-            </div>
+            <a href="index.html" class="logo">
+                <div class="logo-mark">HR</div>
+                <div class="logo-text">Ets. <span>Hadroug Razik</span></div>
+            </a>
             <nav class="main-nav">
-                <button class="mobile-menu-toggle" aria-label="Menu">
+                <button class="mobile-menu-toggle" id="menuToggle" aria-label="Menu">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
-                <ul class="nav-list">
+                <ul class="nav-list" id="navList">
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="infrastructures.html">Infrastructures</a></li>
                     <li><a href="magasins.html" class="active">Magasins</a></li>
@@ -33,59 +36,66 @@
 
     <!-- Page Hero -->
     <section class="page-hero">
-        <div class="container">
-            <h1>Nos Magasins</h1>
-            <p>Commerce de proximité et distribution de qualité</p>
-            <a href="index.html" class="back-home">← Retour à l'accueil</a>
+        <div class="hero-image">
+            <img src="assets/hero-magasins.jpg" alt="Nos Magasins">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-label">Commerce de Proximite</div>
+            <h1 class="hero-title">Nos Magasins</h1>
+            <p class="hero-subtitle">Commerce de proximite et distribution alimentaire de qualite, au service de votre quotidien.</p>
         </div>
     </section>
 
-    <!-- Stores Grid -->
+    <!-- Stores Main -->
     <main class="stores-main">
         <div class="container">
-            <!-- Fruits et Légumes -->
+            <!-- Fruits et Legumes -->
             <section id="fruits" class="store-category">
-                <h2 class="category-title">Fruits et Légumes</h2>
-                <div class="store-grid">
-                    <div class="store-card large">
-                        <div class="store-image">
-                            <img src="assets/placeholder-fruits.jpg" alt="Fruits frais" loading="lazy">
-                            <div class="store-badge">Fraîcheur Garantie</div>
-                        </div>
-                        <div class="store-info">
-                            <h3>Primeur Central</h3>
-                            <p>Fruits et légumes de saison, sourcing local privilégié</p>
-                            <ul class="store-features">
-                                <li>✓ Produits bio disponibles</li>
-                                <li>✓ Livraison possible</li>
-                                <li>✓ Ouvert 7j/7</li>
-                            </ul>
-                        </div>
+                <div class="section-header reveal">
+                    <div class="section-label">Alimentation fraiche</div>
+                    <h2 class="section-title">Fruits et Legumes</h2>
+                </div>
+                <div class="store-card reveal reveal-delay-1">
+                    <div class="store-image">
+                        <img src="assets/hero-magasins.jpg" alt="Fruits frais">
+                        <div class="store-badge">Fraicheur Garantie</div>
+                    </div>
+                    <div class="store-info">
+                        <h3>Primeur Central</h3>
+                        <p>Fruits et legumes de saison, sourcing local privilegie pour vous offrir chaque jour les produits les plus frais.</p>
+                        <ul class="store-features">
+                            <li>Produits bio disponibles</li>
+                            <li>Livraison possible</li>
+                            <li>Ouvert 7j/7</li>
+                            <li>Sourcing local et de saison</li>
+                        </ul>
                     </div>
                 </div>
             </section>
 
-            <!-- Supérette -->
+            <!-- Superette -->
             <section id="superette" class="store-category">
-                <h2 class="category-title">Supérette</h2>
-                <div class="store-grid">
-                    <div class="store-card large">
-                        <div class="store-image">
-                            <img src="assets/placeholder-superette.jpg" alt="Supérette" loading="lazy">
-                            <div class="store-badge">Alimentation Générale</div>
-                        </div>
-                        <div class="store-info">
-                            <h3>Superette Day Today</h3>
-                            <p>Votre quotidien à portée de main. Épicerie, produits frais, hygiène et entretien.</p>
-                            <div class="store-details">
-                                <div class="detail-item">
-                                    <strong>Horaires</strong>
-                                    <span>6h - 22h (7j/7)</span>
-                                </div>
-                                <div class="detail-item">
-                                    <strong>Services</strong>
-                                    <span>Retrait commande, Paiement mobile</span>
-                                </div>
+                <div class="section-header reveal">
+                    <div class="section-label">Alimentation generale</div>
+                    <h2 class="section-title">Superette</h2>
+                </div>
+                <div class="store-card reveal reveal-delay-1">
+                    <div class="store-image">
+                        <img src="assets/hero-magasins.jpg" alt="Superette">
+                        <div class="store-badge">Alimentation Generale</div>
+                    </div>
+                    <div class="store-info">
+                        <h3>Superette Day Today</h3>
+                        <p>Votre quotidien a portee de main. Epicerie, produits frais, hygiene et entretien dans un espace moderne et accueillant.</p>
+                        <div class="store-details">
+                            <div class="detail-item">
+                                <strong>Horaires</strong>
+                                <span>6h - 22h (7j/7)</span>
+                            </div>
+                            <div class="detail-item">
+                                <strong>Services</strong>
+                                <span>Retrait commande, Paiement mobile</span>
                             </div>
                         </div>
                     </div>
@@ -94,23 +104,24 @@
 
             <!-- KMS -->
             <section id="kms" class="store-category">
-                <h2 class="category-title">Kiosque Multi Services (KMS)</h2>
-                <div class="store-grid">
-                    <div class="store-card large">
-                        <div class="store-image">
-                            <img src="assets/placeholder-kms.jpg" alt="KMS" loading="lazy">
-                            <div class="store-badge">Services Essentiels</div>
-                        </div>
-                        <div class="store-info">
-                            <h3>KMS Centre-Ville</h3>
-                            <p>Point unique pour vos démarches quotidiennes</p>
-                            <div class="service-tags">
-                                <span class="tag">Recharges</span>
-                                <span class="tag">Paiement factures</span>
-                                <span class="tag">Transfert d'argent</span>
-                                <span class="tag">Photocopies</span>
-                                <span class="tag">Billeterie</span>
-                            </div>
+                <div class="section-header reveal">
+                    <div class="section-label">Services essentiels</div>
+                    <h2 class="section-title">Kiosque Multi Services (KMS)</h2>
+                </div>
+                <div class="store-card reveal reveal-delay-1">
+                    <div class="store-image">
+                        <img src="assets/hero-magasins.jpg" alt="KMS">
+                        <div class="store-badge">Services Essentiels</div>
+                    </div>
+                    <div class="store-info">
+                        <h3>KMS Centre-Ville</h3>
+                        <p>Point unique pour vos demarches quotidiennes. Un seul lieu pour tous vos services essentiels.</p>
+                        <div class="service-tags">
+                            <span class="tag">Recharges</span>
+                            <span class="tag">Paiement factures</span>
+                            <span class="tag">Transfert d'argent</span>
+                            <span class="tag">Photocopies</span>
+                            <span class="tag">Billeterie</span>
                         </div>
                     </div>
                 </div>
@@ -118,44 +129,48 @@
 
             <!-- Fast Food -->
             <section id="fastfood" class="store-category">
-                <h2 class="category-title">Fast Food</h2>
-                <div class="store-grid">
-                    <div class="store-card large">
-                        <div class="store-image">
-                            <img src="assets/placeholder-fastfood.jpg" alt="Fast Food" loading="lazy">
-                            <div class="store-badge">Restauration Rapide</div>
-                        </div>
-                        <div class="store-info">
-                            <h3>Quick Bite</h3>
-                            <p>Saveurs locales et internationales, service express</p>
-                            <ul class="menu-highlights">
-                                <li>🍔 Burgers maison</li>
-                                <li>🥪 Sandwichs chauds/froids</li>
-                                <li>🥤 Boissons fraîches</li>
-                                <li>☕ Café premium</li>
-                            </ul>
-                        </div>
+                <div class="section-header reveal">
+                    <div class="section-label">Restauration</div>
+                    <h2 class="section-title">Fast Food</h2>
+                </div>
+                <div class="store-card reveal reveal-delay-1">
+                    <div class="store-image">
+                        <img src="assets/hero-magasins.jpg" alt="Fast Food">
+                        <div class="store-badge">Restauration Rapide</div>
+                    </div>
+                    <div class="store-info">
+                        <h3>Quick Bite</h3>
+                        <p>Saveurs locales et internationales, service express pour vos pauses dejeuner ou vos envies gourmandes.</p>
+                        <ul class="menu-highlights">
+                            <li>Burgers maison</li>
+                            <li>Sandwichs chauds/froids</li>
+                            <li>Boissons fraiches</li>
+                            <li>Cafe premium</li>
+                        </ul>
                     </div>
                 </div>
             </section>
-            <section id="fruits" class="store-category">
-                <h2 class="category-title">Boucherie</h2>
-                <div class="store-grid">
-                    <div class="store-card large">
-                        <div class="store-image">
-                            <img src="assets/placeholder-fruits.jpg" alt="Fruits frais" loading="lazy">
-                            <div class="store-badge">Qualité & Fraîcheur</div>
-                        </div>
-                        <div class="store-info">
-                            <h3>Boucherie</h3>
-                            <p>Notre boucherie s'engage à vous offrir une sélection de viandes de première qualité, alliant tradition et respect des normes d'hygiène les plus strictes.</p>
-                            <ul class="store-features">
-                               <li><strong>Sélection premium :</strong> Viandes rouges, agneau et volailles fermières.</li>
-                               <li><strong>Découpe sur mesure :</strong> Préparations adaptées selon vos besoins culinaires.</li>
-                               <li><strong>Traçabilité totale :</strong> Produits rigoureusement contrôlés pour garantir la sécurité alimentaire.</li>
-                               <li><strong>Service conseil :</strong> Conseils de préparation et de cuisson par nos experts.</li>
-                            </ul>
-                        </div>
+
+            <!-- Boucherie -->
+            <section id="boucherie" class="store-category">
+                <div class="section-header reveal">
+                    <div class="section-label">Boucherie traditionnelle</div>
+                    <h2 class="section-title">Boucherie</h2>
+                </div>
+                <div class="store-card reveal reveal-delay-1">
+                    <div class="store-image">
+                        <img src="assets/hero-magasins.jpg" alt="Boucherie">
+                        <div class="store-badge">Qualite & Fraicheur</div>
+                    </div>
+                    <div class="store-info">
+                        <h3>Boucherie Hadroug</h3>
+                        <p>Notre boucherie s'engage a vous offrir une selection de viandes de premiere qualite, alliant tradition et respect des normes d'hygiene les plus strictes.</p>
+                        <ul class="store-features">
+                            <li><strong>Selection premium :</strong> Viandes rouges, agneau et volailles fermieres</li>
+                            <li><strong>Decoupe sur mesure :</strong> Preparations adaptees selon vos besoins culinaires</li>
+                            <li><strong>Tracabilite totale :</strong> Produits rigoureusement controles pour garantir la securite alimentaire</li>
+                            <li><strong>Service conseil :</strong> Conseils de preparation et de cuisson par nos experts</li>
+                        </ul>
                     </div>
                 </div>
             </section>
@@ -166,14 +181,9 @@
     <footer class="main-footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Ets HADROUG RAZIK</h4>
-                    <p>Votre partenaire de confiance pour un développement durable.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>Email: contact@groupediversifie.com</p>
-                    <p>Tél: +XXX XX XX XX XX</p>
+                <div class="footer-brand">
+                    <div class="logo-text">Ets. <span>Hadroug Razik</span></div>
+                    <p>Votre partenaire de confiance pour un developpement durable. Un groupe diversifie engage dans la construction, la gestion d'infrastructures, le commerce et les services.</p>
                 </div>
                 <div class="footer-section">
                     <h4>Navigation</h4>
@@ -185,12 +195,25 @@
                         <li><a href="etb-tce.html">ETB TCE</a></li>
                     </ul>
                 </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Email: contact@hadrougrazik.dz</li>
+                        <li>Tel: +213 (0)34 XX XX XX</li>
+                        <li>El Kseur, Bejaia, Algerie</li>
+                    </ul>
+                </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Ets HADROUG RAZIK. Tous droits réservés.</p>
+                <p>&copy; 2024 Ets. Hadroug Razik. Tous droits reserves.</p>
             </div>
         </div>
     </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+        <svg viewBox="0 0 24 24"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
 
     <script src="js/main.js"></script>
 </body>
