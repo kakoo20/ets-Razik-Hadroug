@@ -2080,3 +2080,8 @@ button:focus-visible {
     stroke-linecap: round;
     stroke-linejoin: round;
 }
+
+/* Add space only under the Khaima section in Magasins */
+#khaima {
+    padding-bottom: 80px; 
+}
